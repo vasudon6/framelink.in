@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>150+ Web, Android & iOS Apps Pack - Framelink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Naye custom colors (agar zaroorat ho)
+              'primary': { // Teal shades
+                DEFAULT: '#0D9488', // teal-600
+                light: '#99F6E4', // teal-200
+                lighter: '#F0FDFA', // teal-50
+                dark: '#0F766E' // teal-700
+              },
+              'secondary': { // Amber shades (accent ke liye)
+                DEFAULT: '#F59E0B', // amber-500
+                light: '#FEF3C7', // amber-100
+                dark: '#B45309' // amber-700
+              },
+              'neutral': { // Slate shades (grays ke liye)
+                lightest: '#F8FAFC', // slate-50
+                light: '#F1F5F9', // slate-100
+                DEFAULT: '#64748B', // slate-500
+                dark: '#334155', // slate-700
+                darkest: '#0F172A' // slate-900
+              },
+              // Purane custom colors (agar retain karna ho, yahan update karein)
+              'custom-blue': '#e0f2fe', // Example: light sky blue
+              'custom-blue-hover': '#bae6fd', // Example: lighter sky blue
+              'custom-gray': '#f8fafc', // slate-50
+              'custom-gray-hover': '#e2e6ea', // slate-200 (adjust as needed)
+            },
+            boxShadow: {
+              'custom': '0 2px 10px rgba(0, 0, 0, 0.1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Animations (fadeInUp, slideInLeft, slideInRight, scaleIn, float, shine) - No changes needed */
+      @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes slideInLeft { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+      @keyframes slideInRight { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+      @keyframes scaleIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+      @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+      @keyframes shine { 0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); } 100% { transform: translateX(100%) translateY(100%) rotate(45deg); } }
+
+      .animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; }
+      .animate-slideInLeft { animation: slideInLeft 0.6s ease-out forwards; }
+      .animate-slideInRight { animation: slideInRight 0.6s ease-out forwards; }
+      .animate-scaleIn { animation: scaleIn 0.6s ease-out forwards; }
+      .animate-float { animation: float 3s ease-in-out infinite; }
+      .animate-delay-100 { animation-delay: 100ms; }
+      .animate-delay-200 { animation-delay: 200ms; }
+      .animate-delay-300 { animation-delay: 300ms; }
+      .animate-delay-400 { animation-delay: 400ms; }
+      .animate-delay-500 { animation-delay: 500ms; }
+
+      .shine-button { position: relative; overflow: hidden; }
+      .shine-button::after { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.3) 50%, transparent 55%); animation: shine 2s infinite; }
+      .shine-button:hover::after { animation: shine 1s infinite; }
+
+      .custom-shadow { box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+
+      /* Glass Morphism Effects - Enhanced */
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.55); /* Thoda aur transparent */
+        backdrop-filter: blur(15px); /* Thoda zyada blur */
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1); /* Thoda halka shadow */
+      }
+
+      .glass-card {
+        background: rgba(255, 255, 255, 0.65); /* Card background thoda transparent */
+        backdrop-filter: blur(12px); /* Blur badhaya */
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 6px 25px 0 rgba(31, 38, 135, 0.12); /* Subtle shadow */
+        transition: all 0.3s ease;
+      }
+
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.75); /* Hover pe thoda kam transparent */
+        transform: translateY(-5px);
+        box-shadow: 0 10px 35px 0 rgba(31, 38, 135, 0.18); /* Hover shadow */
+      }
+
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.80); /* Nav background thoda transparent */
+        backdrop-filter: blur(15px); /* Blur badhaya */
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(230, 230, 230, 0.4); /* Border thoda halka */
+      }
+
+      /* Body background gradient updated */
+      body {
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); /* Lighter blue/sky gradient */
+        min-height: 100vh;
+      }
+
+      /* Footer glass effect updated */
+      footer {
+        background: rgba(15, 23, 42, 0.92); /* Dark slate background thoda transparent */
+        backdrop-filter: blur(15px); /* Blur badhaya */
+        -webkit-backdrop-filter: blur(15px);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Mobile navigation glass effect updated */
+      .bottom-nav {
+        background: rgba(255, 255, 255, 0.88); /* Thoda aur transparent */
+        backdrop-filter: blur(12px); /* Blur badhaya */
+        -webkit-backdrop-filter: blur(12px);
+        border-top: 1px solid rgba(226, 232, 240, 0.5); /* slate-200 border halka */
+      }
+
+      /* Custom styles for project list items */
+      .project-card {
+        background-color: #ffffff;
+        padding: 0.75rem; /* p-3 */
+        border-radius: 0.5rem; /* rounded-lg */
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-sm */
+        transition: all 0.2s ease-in-out;
+        border: 1px solid #e5e7eb; /* border-gray-200 */
+      }
+      .project-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+        border-color: #14B8A6; /* border-teal-500 */
+      }
+      .project-card i {
+        width: 1.25rem; /* w-5 */
+        text-align: center;
+      }
+
+      /* Custom styles for 'Who Should Buy' cards */
+      .who-should-buy-card {
+        background-color: #f8fafc; /* slate-50 */
+        padding: 1rem; /* p-4 */
+        border-radius: 0.75rem; /* rounded-xl */
+        border: 1px solid #e2e8f0; /* slate-200 */
+        transition: all 0.3s ease;
+      }
+      .who-should-buy-card:hover {
+        background-color: #f1f5f9; /* slate-100 */
+        border-left: 4px solid #14B8A6; /* border-l-4 border-teal-500 */
+      }
+
+      /* Primary button style */
+      .primary-btn {
+        display: inline-flex; /* Use flex for alignment */
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem; /* gap-2 */
+        padding: 0.75rem 1.5rem; /* px-6 py-3 */
+        background-color: #0F766E; /* bg-teal-700 */
+        color: white;
+        border-radius: 0.5rem; /* rounded-lg */
+        font-weight: 600; /* font-semibold */
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+      }
+      .primary-btn:hover {
+        background-color: #0D9488; /* bg-teal-600 */
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+      }
+    </style>
+    <script>
+      const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fadeInUp'); // Ya koi aur animation class
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      document.addEventListener('DOMContentLoaded', () => {
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        animatedElements.forEach(el => observer.observe(el));
+
+        // Live Views Counter
+        function updateLiveViews() {
+          const min = 20;
+          const max = 120;
+          const randomViews = Math.floor(Math.random() * (max - min + 1)) + min;
+          document.getElementById('live-views').textContent = randomViews + 'Live watching';
+        }
+        updateLiveViews();
+        setInterval(updateLiveViews, 5000); // Update every 5 seconds
+
+        // Timer functionality with 8-hour reset
+        function updateTimers() {
+          const now = new Date().getTime();
+          const lastReset = localStorage.getItem('lastResetTime') || now;
+          const eightHours = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
+          const twoHours = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
+          const timePassed = now - parseInt(lastReset);
+          let timeLeft = eightHours - (timePassed % eightHours);
+          
+          // Reset to 8 hours when reaching 2 hours remaining
+          if (timeLeft <= twoHours) {
+            localStorage.setItem('lastResetTime', now.toString());
+            timeLeft = eightHours;
+          }
+          
+          const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+          
+          // Format time with leading zeros
+          const timeString = `${hours.toString().padStart(2, '0')}h ${minutes.toString().padStart(2, '0')}m ${seconds.toString().padStart(2, '0')}s`;
+          
+          // Update all timer elements
+          const timerElements = document.querySelectorAll('#timer, #timer-bottom');
+          timerElements.forEach(element => {
+            if (element) element.textContent = timeString;
+          });
+        }
+        
+        // Initialize timer and start interval
+        if (!localStorage.getItem('lastResetTime')) {
+          localStorage.setItem('lastResetTime', new Date().getTime().toString());
+        }
+        
+        updateTimers();
+        setInterval(updateTimers, 1000);
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2D44XH7QG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-T2D44XH7QG');
+    </script>
+    <script src="js/sellPopup.js"></script>
+  </head>
+  <body class="bg-slate-50 w-dvw overflow-x-hidden text-neutral-dark">
+    <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between h-16 px-4 glass-nav shadow">
+      <a href="index.html" class="flex items-center">
+        <div class="text-2xl font-bold text-neutral-darkest">Framelink<span class="text-primary">.</span></div>
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="add new.html" class="relative group">
+          <i class="fas fa-plus text-neutral-DEFAULT text-xl group-hover:text-primary transition-colors"></i>
+        </a>
+        <button class="relative group cursor-pointer">
+          <i class="fas fa-bell text-neutral-DEFAULT text-xl group-hover:text-primary transition-colors"></i>
+          <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">2</span>
+        </button>
+        <a href="/favorites.html" class="relative group">
+          <i class="fas fa-heart text-neutral-DEFAULT text-xl group-hover:text-red-500 transition-colors"></i>
+          <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center fav-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-24 relative max-w-7xl">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary-lighter/30 to-purple-50/30 -z-10 rounded-b-3xl"></div>
+      <div class="grid grid-cols-1 gap-8">
+
+        <div class="space-y-6 animate-slideInRight lg:col-span-1 flex flex-col md:flex-row items-start gap-8">
+          <img src="hero-image.svg" alt="App Pack Features" class="w-full md:w-1/3 max-w-md mx-auto md:mx-0 object-contain animate-float block">
+          <div class="w-full">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-neutral-darkest mb-4 sm:mb-6 font-poppins animate-fadeInUp text-center md:text-left">Complete Collection of 150+ Web, Android, and iOS Applications</h1>
+            <div class="flex items-center gap-4 sm:gap-6 mb-4 sm:mb-6 justify-center md:justify-start">
+              <div class="flex text-secondary">★★★★★</div>
+              <span class="text-neutral-DEFAULT">(128 Reviews)</span>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-neutral-DEFAULT mb-6 sm:mb-8 items-center md:items-start">
+              <span class="flex items-center gap-3">
+                <i class="fas fa-download w-5 h-5 text-neutral-DEFAULT"></i> 1.2k+ Downloads
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fas fa-user w-5 h-5 text-neutral-DEFAULT"></i> 850+ Active Users
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fas fa-eye w-5 h-5 text-primary"></i>
+                <span id="live-views" class="text-neutral-DEFAULT">...</span>
+              </span>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <div class="flex flex-col items-center sm:items-start">
+                <div class="text-3xl font-bold text-red-600 mb-2">90% OFF</div>
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-lg text-gray-400 line-through">₹4000</span>
+                  <span class="text-2xl font-bold text-primary">₹399</span>
+                </div>
+              </div>
+              <button onclick="window.location.href='https://rzp.io/rzp/SA3qJReh'" class="primary-btn shine-button w-full sm:w-auto">
+                <i class="fas fa-shopping-cart w-5 h-5"></i> Buy Now
+              </button>
+            </div>
+            <div class="mt-4 text-center sm:text-left">
+              <div id="countdown" class="text-lg font-semibold text-neutral-dark">
+                <i class="fas fa-clock text-primary mr-2"></i>
+                <span>Offer ends in: <span id="timer">Loading...</span></span>
+              </div>
+            </div>
+            <div class="prose max-w-none text-neutral-DEFAULT mt-8">
+              <p class="mb-4">
+                Welcome to the ultimate 150+ Apps Mega Pack — a complete collection of ready-to-use Web Applications, Android Apps, and iOS Apps with full source code, documentation, and admin panels.
+              </p>
+              <p class="mb-4">
+                This pack is perfect for developers, resellers, freelancers, and digital product sellers looking for high-quality, customizable apps and websites across different categories including eCommerce, games, utilities, social apps, educational platforms, and business directories.
+              </p>
+              <p class="mb-4">
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        
+              
+
+        <div class="lg:col-span-1 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12 px-4 sm:px-0">
+          <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-scaleIn animate-delay-100 border border-slate-100 hover:border-primary-light">
+            <h3 class="text-xl font-semibold mb-4 text-neutral-darkest">Why Choose This Pack?</h3>
+            <ul class="space-y-3 text-neutral-DEFAULT">
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>150+ Fully Functional Projects</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>Ready-to-use Admin Panels Included</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>Full Documentation for Each Project</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>Web, Android, and iOS Apps Covered</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>Easy to Customize and Resell</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>Save Months of Development Time</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>Suitable for Digital Agencies, Freelancers, and Developers</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>One-Time Purchase – Lifetime Access</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-scaleIn animate-delay-200 border border-slate-100 hover:border-primary-light">
+            <h3 class="text-xl font-semibold mb-4 text-neutral-darkest flex items-center gap-2"><i class="fas fa-key text-primary"></i>Key Features</h3>
+            <ul class="space-y-3 text-neutral-DEFAULT">
+              <li class="flex items-center gap-2"><i class="fas fa-code text-primary"></i><span>Android Apps with Complete Source Code</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-code text-primary"></i><span>iOS Apps with Swift/Objective-C Codebase</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-code text-primary"></i><span>Web Applications with Responsive Design</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-code text-primary"></i><span>eCommerce, Utility, Games, Education & Business Apps</span></li>
+              <li class="flex items-center gap-2"><i class="fas fa-code text-primary"></i><span>Documentation & Installation Guide Included</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 mb-8 sm:mb-12 px-4 sm:px-0">
+          <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-neutral-darkest flex items-center gap-3">
+            <i class="fas fa-gift text-primary"></i>
+            What You Get
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              <div class="group glass-card p-6 rounded-xl transition-all duration-300 border border-slate-100">
+                <div class="flex items-center gap-4">
+                  <div class="bg-primary-light/50 p-3 rounded-lg group-hover:bg-primary-light transition-colors duration-300">
+                    <i class="fas fa-sync text-primary w-8 h-8 flex items-center justify-center text-xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-semibold text-neutral-darkest mb-1">Free Lifetime Updates</h4>
+                    <p class="text-neutral-DEFAULT text-sm">Get all future updates and improvements at no additional cost</p>
+                  </div>
+                  <i class="fas fa-chevron-right text-slate-400 group-hover:text-primary transition-colors duration-300"></i>
+                </div>
+              </div>
+              <div class="group glass-card p-6 rounded-xl transition-all duration-300 border border-slate-100">
+                 <div class="flex items-center gap-4">
+                   <div class="bg-purple-100 p-3 rounded-lg group-hover:bg-purple-200 transition-colors duration-300"> 
+                     <i class="fas fa-headset text-purple-500 w-8 h-8 flex items-center justify-center text-xl"></i>
+                   </div>
+                   <div class="flex-1">
+                     <h4 class="font-semibold text-neutral-darkest mb-1">Premium Support</h4>
+                     <p class="text-neutral-DEFAULT text-sm">Priority assistance and expert guidance whenever you need help</p>
+                   </div>
+                   <i class="fas fa-chevron-right text-slate-400 group-hover:text-purple-500 transition-colors duration-300"></i>
+                 </div>
+              </div>
+              <div class="group glass-card p-6 rounded-xl transition-all duration-300 border border-slate-100">
+                 <div class="flex items-center gap-4">
+                   <div class="bg-green-100 p-3 rounded-lg group-hover:bg-green-200 transition-colors duration-300"> 
+                     <i class="fas fa-tools text-green-500 w-8 h-8 flex items-center justify-center text-xl"></i>
+                   </div>
+                   <div class="flex-1">
+                     <h4 class="font-semibold text-neutral-darkest mb-1">Installation Support</h4>
+                     <p class="text-neutral-DEFAULT text-sm">Step-by-step assistance to help you set up and deploy your applications</p>
+                   </div>
+                   <i class="fas fa-chevron-right text-slate-400 group-hover:text-green-500 transition-colors duration-300"></i>
+                 </div>
+              </div>
+                 </div>
+               </div>
+               <div class="group glass-card p-6 rounded-xl transition-all duration-300 border border-slate-100">
+                 <div class="flex items-center gap-4">
+                   <div class="bg-green-100 p-3 rounded-lg group-hover:bg-green-200 transition-colors duration-300"> <i class="fas fa-book text-green-500 w-8 h-8 flex items-center justify-center text-xl"></i>
+                   </div>
+                   <div class="flex-1">
+                     <h4 class="font-semibold text-neutral-darkest mb-1">Comprehensive Documentation</h4>
+                     <p class="text-neutral-DEFAULT text-sm">Detailed guides, API documentation, and step-by-step setup instructions</p>
+                   </div>
+                   <i class="fas fa-chevron-right text-slate-400 group-hover:text-green-500 transition-colors duration-300"></i>
+                 </div>
+               </div>
+               <div class="group glass-card p-6 rounded-xl transition-all duration-300 border border-slate-100">
+                 <div class="flex items-center gap-4">
+                   <div class="bg-secondary-light p-3 rounded-lg group-hover:bg-secondary-light/80 transition-colors duration-300"> <i class="fas fa-database text-secondary-dark w-8 h-8 flex items-center justify-center text-xl"></i>
+                   </div>
+                   <div class="flex-1">
+                     <h4 class="font-semibold text-neutral-darkest mb-1">Firebase Integration</h4>
+                     <p class="text-neutral-DEFAULT text-sm">Ready-to-use Firebase setup with authentication, database, and cloud functions</p>
+                   </div>
+                   <i class="fas fa-chevron-right text-slate-400 group-hover:text-secondary transition-colors duration-300"></i>
+                 </div>
+               </div>
+               <div class="group glass-card p-6 rounded-xl transition-all duration-300 border border-slate-100">
+                 <div class="flex items-center gap-4">
+                   <div class="bg-red-100 p-3 rounded-lg group-hover:bg-red-200 transition-colors duration-300"> <i class="fas fa-file-archive text-red-500 w-8 h-8 flex items-center justify-center text-xl"></i>
+                   </div>
+                   <div class="flex-1">
+                     <h4 class="font-semibold text-neutral-darkest mb-1">All-in-One Zip File</h4>
+                     <p class="text-neutral-DEFAULT text-sm">Everything bundled in a single, organized zip file for easy download and setup</p>
+                   </div>
+                   <i class="fas fa-chevron-right text-slate-400 group-hover:text-red-500 transition-colors duration-300"></i>
+                 </div>
+               </div>
+               <div class="group glass-card p-6 rounded-xl transition-all duration-300 border border-slate-100">
+                 <div class="flex items-center gap-4">
+                   <div class="bg-rose-100 p-3 rounded-lg group-hover:bg-rose-200 transition-colors duration-300"> <i class="fas fa-gift text-rose-500 w-8 h-8 flex items-center justify-center text-xl"></i>
+                   </div>
+                   <div class="flex-1">
+                     <h4 class="font-semibold text-neutral-darkest mb-1">Bonus Features</h4>
+                     <p class="text-neutral-DEFAULT text-sm">Extra templates, UI kits, and premium assets worth $500+</p>
+                   </div>
+                   <i class="fas fa-chevron-right text-slate-400 group-hover:text-rose-500 transition-colors duration-300"></i>
+                 </div>
+               </div>
+            </div>
+
+            <div class="mt-8 bg-primary-lighter/50 p-6 rounded-xl border border-primary-light/50">
+              <h4 class="font-semibold text-neutral-darkest mb-4 flex items-center gap-2">
+                <i class="fas fa-star text-secondary"></i> Bonus Features
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-neutral-DEFAULT">
+                <div class="flex items-center gap-3"><i class="fas fa-sync text-green-500"></i><span>Free Lifetime Updates</span></div>
+                <div class="flex items-center gap-3"><i class="fas fa-headset text-green-500"></i><span>Premium Support</span></div>
+                <div class="flex items-center gap-3"><i class="fas fa-tools text-green-500"></i><span>Installation Support</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 space-y-8">
+          <div>
+            <h2 class="text-2xl font-semibold mb-6 animate-fadeInUp flex items-center gap-3 text-neutral-darkest">
+              <i class="fas fa-list-ul text-primary"></i>
+              Complete Categorized List of Projects
+            </h2>
+
+            <div class="mb-8 animate-on-scroll">
+              <h3 class="text-xl font-semibold mb-4 flex items-center gap-3 bg-gradient-to-r from-green-50 to-transparent p-3 rounded-lg border-l-4 border-green-500">
+                <i class="fab fa-android text-green-500"></i>
+                <span class="bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">1. Android Apps</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-neutral-dark">
+                <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Car Racing Game</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-images text-blue-500"></i>4K Wallpaper App</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-puzzle-piece text-yellow-500"></i>15 Puzzle Game</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-phone text-red-500"></i>ABC Call Recorder</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-camera text-indigo-500"></i>Advanced Snap Photo Editor</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Amazing Brick Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-images text-blue-500"></i>Amazing Photo Collage App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-phone text-red-500"></i>Ambulance Emergency App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-camera text-indigo-500"></i>Android Drawing App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-file-alt text-gray-500"></i>Android eBook App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-keyboard text-gray-500"></i>Android Keyboard App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-music text-gray-500"></i>Android MP3 Player</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-newspaper text-gray-500"></i>Android News App 2.0</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-utensils text-gray-500"></i>Android Recipe App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-car text-gray-500"></i>Android Taxi App (Updated)</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-globe text-gray-500"></i>Android WebView App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-lock text-gray-500"></i>App Locker</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-exclamation-triangle text-red-500"></i>Avoid The Spikes Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-battery-full text-gray-500"></i>Backup & Restore Tool</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-battery-empty text-gray-500"></i>Battery Saver App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-heart text-red-500"></i>Best Guide & Tips App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-calculator text-gray-500"></i>BMI Calculator App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-newspaper text-gray-500"></i>Breaking News App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-address-card text-gray-500"></i>Business Card Maker</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-list-alt text-purple-500"></i>Business Directory App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-phone text-red-500"></i>Call Recorder App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-car text-gray-500"></i>Car Finder App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Car Speed Racing Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-apple text-red-500"></i>Catch The Food Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-microphone text-gray-500"></i>Change My Voice App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-puzzle-piece text-yellow-500"></i>Classic Blocks Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-comment text-gray-500"></i>Cleaner for WhatsApp</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-cog text-gray-500"></i>CPU Information App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-hamburger text-gray-500"></i>Crazy Meatball Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-dollar-sign text-gray-500"></i>Currency Converter App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mountain text-gray-500"></i>Danger Climber Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-heart text-red-500"></i>Dating App (Android Version)</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-book text-gray-500"></i>Dictionary Pro</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-user text-gray-500"></i>Doctor Finder App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-bicycle text-gray-500"></i>Driver Rush Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Droid Market (App Store Clone)</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-home text-gray-500"></i>Easy Real Estate App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-graduation-cap text-gray-500"></i>Educational App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-camera text-gray-500"></i>Emoji Camera Maker</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-calendar text-gray-500"></i>Event Finder App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-video text-gray-500"></i>Facebook Video Downloader</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Fake iPhone Simulator</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-battery-full text-gray-500"></i>Fast Battery Charger</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-broom text-gray-500"></i>Fast Cleaner App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-hand-spock text-gray-500"></i>Fast Tap Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-flag text-gray-500"></i>Flags Quiz Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-calculator text-gray-500"></i>Freaking Math Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-apple text-red-500"></i>Fruit Market App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Game Scratch App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-bicycle text-gray-500"></i>General Services App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-apple text-gray-500"></i>Gold HD Wallpaper App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-headphones text-gray-500"></i>Guess The Sound Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-video text-gray-500"></i>HD Video Player</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-heart text-red-500"></i>Healer App Template</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-home text-gray-500"></i>Hotel Booking App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-question text-gray-500"></i>How To Guide App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-code text-gray-500"></i>HTML Builder App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Infinity Climb Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-microphone text-gray-500"></i>Inform Me App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-camera text-gray-500"></i>Insta Filter Photo Editor</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Instagram Downloader</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-search text-gray-500"></i>Item Finder App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-tree text-gray-500"></i>Jungle Adventure Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-tree text-gray-500"></i>Jungle World Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-child text-gray-500"></i>Kids Educational App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-football-ball text-gray-500"></i>Live Cricket Scores App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-football-ball text-gray-500"></i>Live Soccer Scores App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-map-marker-alt text-gray-500"></i>Location Tracker App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-heart text-red-500"></i>Love Calculator App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-paint-brush text-gray-500"></i>Material Design Template</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Material Live Wallpaper</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-calculator text-gray-500"></i>Math Practice App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-laugh text-gray-500"></i>Meme Generator App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-calculator text-gray-500"></i>Memory Math Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-user text-gray-500"></i>Men In Suit Photo Editor</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Mobiquiz App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-cut text-gray-500"></i>MP3 Cutter App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-globe text-gray-500"></i>Multi-language Speech Translator</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-bicycle text-gray-500"></i>Multipurpose Business App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Moto Cross Racing Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-film text-gray-500"></i>Movie Review App</div>
+              </div>
+            </div>
+
+            <div class="mb-8 animate-on-scroll">
+              <h3 class="text-xl font-semibold mb-4 flex items-center gap-3 bg-gradient-to-r from-slate-100 to-transparent p-3 rounded-lg border-l-4 border-slate-800">
+                <i class="fab fa-apple text-slate-800"></i>
+                <span class="bg-gradient-to-r from-slate-800 to-slate-700 bg-clip-text text-transparent">2. iOS Apps</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-neutral-dark">
+                <div class="project-card flex items-center gap-2"><i class="fas fa-ad text-blue-500"></i>AdForest iOS App</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-bell text-yellow-500"></i>BuzzIt iOS App</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-candy-cane text-pink-500"></i>Candy Jump iOS Game</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-pencil-alt text-purple-500"></i>Dooble iOS App</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-rss text-orange-500"></i>FeedWes iOS App</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-heart text-red-500"></i>Match App (iPhone Version)</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-moon text-indigo-500"></i>Night Club iOS App</div>
+              </div>
+            </div>
+
+            <div class="mb-8 animate-on-scroll">
+              <h3 class="text-xl font-semibold mb-4 flex items-center gap-3 bg-gradient-to-r from-primary-lighter/50 to-transparent p-3 rounded-lg border-l-4 border-primary">
+                <i class="fas fa-globe text-primary"></i>
+                <span class="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">3. Web Applications & Ionic Apps</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-neutral-dark">
+                <div class="project-card flex items-center gap-2"><i class="fas fa-utensils text-red-500"></i>App Seed Restaurant Web App</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-cart text-green-500"></i>Bazaar Ionic App Template</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-building text-blue-500"></i>City Builder Web App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-map text-blue-500"></i>City Guide Ionic App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-search text-gray-500"></i>Classified Local Search App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Classified iOS App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-user text-gray-500"></i>Customer Site App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-basket text-green-500"></i>eCommerce Shop App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-book text-gray-500"></i>Educational Web App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Ionic 2 WooCommerce App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Ionic 3 UI Template</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Ionic Full App Template</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-home text-gray-500"></i>Ionic Hotel Booking App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-basket text-green-500"></i>Ionic Shop App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-store text-blue-500"></i>Ion Store App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-wordpress text-blue-500"></i>Ion WordPress App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-chart-bar text-gray-500"></i>JSON Plotter Tool</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-utensils text-red-500"></i>Karenderia Restaurant System</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-bicycle text-gray-500"></i>Karenderia Driver App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Karenderia Mobile App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-list-alt text-purple-500"></i>Klassy Classified App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-list-alt text-purple-500"></i>ListingGo Directory App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-basket text-green-500"></i>Maboutique eCommerce App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-basket text-green-500"></i>Markeet Shopping App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-globe text-gray-500"></i>Media Network App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-pill text-gray-500"></i>Medicine Alert App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Mobiquiz Web Version</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mobile text-gray-500"></i>Mokets Mobile App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-home text-gray-500"></i>Moncocoo Store App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-list-alt text-purple-500"></i>Multi-purpose Business Directory App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-newspaper text-gray-500"></i>News Web App (Breaking News App)</div>
+              </div>
+            </div>
+
+            <div class="mb-8 animate-on-scroll">
+               <h3 class="text-xl font-semibold mb-4 flex items-center gap-3 bg-gradient-to-r from-slate-100 to-transparent p-3 rounded-lg border-l-4 border-slate-700">
+                 <i class="fas fa-briefcase text-slate-700"></i>
+                 <span class="bg-gradient-to-r from-slate-700 to-slate-600 bg-clip-text text-transparent">4. Business & Directory Apps</span>
+               </h3>
+               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-neutral-dark">
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-building text-blue-500"></i>Business App Template</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-list-alt text-purple-500"></i>Business Directory App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-map text-blue-500"></i>City Directory App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-search text-gray-500"></i>Classified Local Search</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-address-card text-gray-500"></i>Business Card Maker</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-home text-gray-500"></i>Hotel Booking App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-home text-gray-500"></i>Real Estate App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-utensils text-red-500"></i>Restaurant App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-car text-gray-500"></i>Taxi Booking App</div>
+               </div>
+             </div>
+
+            <div class="mb-8 animate-on-scroll">
+              <h3 class="text-xl font-semibold mb-4 flex items-center gap-3 bg-gradient-to-r from-green-50 to-transparent p-3 rounded-lg border-l-4 border-green-600">
+                <i class="fas fa-shopping-bag text-green-600"></i>
+                <span class="bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">5. eCommerce Apps</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-neutral-dark">
+                <div class="project-card flex items-center gap-2"><i class="fas fa-store text-blue-500"></i>Bazaar Ionic App</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-basket text-purple-500"></i>Ciyashop Android App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-basket text-green-500"></i>eCommerce Shop App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-store text-blue-500"></i>Ion Store App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-wordpress text-blue-500"></i>Ion WordPress App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-utensils text-red-500"></i>Karenderia Restaurant & Driver App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-basket text-green-500"></i>Maboutique eCommerce App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-shopping-basket text-green-500"></i>Markeet Shopping App</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-home text-gray-500"></i>Moncocoo Store App</div>
+              </div>
+            </div>
+
+            <div class="mb-8 animate-on-scroll">
+              <h3 class="text-xl font-semibold mb-4 flex items-center gap-3 bg-gradient-to-r from-purple-50 to-transparent p-3 rounded-lg border-l-4 border-purple-600">
+                <i class="fas fa-gamepad text-purple-600"></i>
+                <span class="bg-gradient-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">6. Games Collection</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-neutral-dark">
+                <div class="project-card flex items-center gap-2"><i class="fas fa-cube text-yellow-500"></i>Amazing Brick Game</div>
+                <div class="project-card flex items-center gap-2"><i class="fas fa-exclamation-triangle text-red-500"></i>Avoid The Spikes Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-car text-gray-500"></i>Car Speed Racing Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-apple text-red-500"></i>Catch The Food Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-puzzle-piece text-yellow-500"></i>Classic Blocks Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-hamburger text-gray-500"></i>Crazy Meatball Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-mountain text-gray-500"></i>Danger Climber Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-hand-spock text-gray-500"></i>Fast Tap Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-flag text-gray-500"></i>Flags Quiz Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-calculator text-gray-500"></i>Freaking Math Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-headphones text-gray-500"></i>Guess The Sound Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Infinity Climb Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-search text-gray-500"></i>Item Finder Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-tree text-gray-500"></i>Jungle Adventure Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-tree text-gray-500"></i>Jungle World Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-puzzle-piece text-yellow-500"></i>Matches Puzzle Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-calculator text-gray-500"></i>Memory Math Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-gamepad text-purple-500"></i>Moto Cross Racing Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-puzzle-piece text-yellow-500"></i>Puzzle 15 Game</div>
+                 <div class="project-card flex items-center gap-2"><i class="fas fa-car text-gray-500"></i>Speed Racing Game</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 animate-on-scroll">
+          <div class="bg-white rounded-xl shadow-lg p-8 custom-shadow">
+            <h2 class="text-2xl font-semibold mb-6 text-neutral-darkest">Who Should Buy This Pack?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="who-should-buy-card">
+                <h3 class="font-semibold text-neutral-darkest mb-2">App Developers</h3>
+                <p class="text-neutral-DEFAULT text-sm">Speed up development and save months of work.</p>
+              </div>
+              <div class="who-should-buy-card">
+                <h3 class="font-semibold text-neutral-darkest mb-2">Freelancers</h3>
+                <p class="text-neutral-DEFAULT text-sm">Offer clients ready-to-use solutions.</p>
+              </div>
+              <div class="who-should-buy-card">
+                <h3 class="font-semibold text-neutral-darkest mb-2">Agencies</h3>
+                <p class="text-neutral-DEFAULT text-sm">Build client portfolios faster.</p>
+              </div>
+
+              <div class="who-should-buy-card">
+                <h3 class="font-semibold text-neutral-darkest mb-2">Tech Entrepreneurs</h3>
+                <p class="text-neutral-DEFAULT text-sm">Start an app business with pre-made solutions.</p>
+              </div>
+              <div class="who-should-buy-card">
+                <h3 class="font-semibold text-neutral-darkest mb-2">Beginners & Students</h3>
+                <p class="text-neutral-DEFAULT text-sm">Learn from real-world projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 animate-on-scroll">
+          <div class="bg-primary-lighter/60 rounded-xl p-8 custom-shadow">
+            <h2 class="text-2xl font-semibold mb-6 flex items-center gap-3 text-neutral-darkest">
+              <i class="fas fa-question-circle text-primary"></i>
+              Frequently Asked Questions
+            </h2>
+            <div class="space-y-4">
+              <div class="faq-item bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md border border-slate-100">
+                <button class="faq-question flex justify-between items-center w-full text-left">
+                  <span class="font-semibold text-neutral-darkest"><i class="fas fa-code text-primary mr-2"></i>What programming languages are covered?</span>
+                  <svg class="w-6 h-6 transform transition-transform duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+                <div class="faq-answer mt-4 text-neutral-DEFAULT hidden">
+                  <p>This pack includes projects in various popular programming languages:</p>
+                  <ul class="list-disc ml-6 mt-2 space-y-1">
+                    <li>Java (Android Development)</li>
+                    <li>Swift & Objective-C (iOS Development)</li>
+                    <li>JavaScript/TypeScript (Web & Ionic Apps)</li>
+                    <li>PHP (Backend & Web Apps)</li>
+                    <li>HTML/CSS (Frontend)</li>
+                    <li>Python (Utility Apps)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq-item bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md border border-slate-100">
+                 <button class="faq-question flex justify-between items-center w-full text-left">
+                   <span class="font-semibold text-neutral-darkest"><i class="fas fa-file-code text-green-600 mr-2"></i>Do I get full source code access?</span>
+                   <svg class="w-6 h-6 transform transition-transform duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                 </button>
+                 <div class="faq-answer mt-4 text-neutral-DEFAULT hidden">
+                   <p>Yes! You receive:</p>
+                   <ul class="list-disc ml-6 mt-2 space-y-1">
+                     <li>Complete, unencrypted source code for all applications</li>
+                     <li>All assets, including images, icons, and design files</li>
+                     <li>Database schemas and API documentation</li>
+                     <li>Step-by-step setup instructions</li>
+                   </ul>
+                 </div>
+               </div>
+               <div class="faq-item bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md border border-slate-100">
+                 <button class="faq-question flex justify-between items-center w-full text-left">
+                   <span class="font-semibold text-neutral-darkest"><i class="fas fa-sync text-purple-600 mr-2"></i>Do I get free updates?</span>
+                   <svg class="w-6 h-6 transform transition-transform duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                 </button>
+                 <div class="faq-answer mt-4 text-neutral-DEFAULT hidden">
+                   Yes, you receive lifetime updates for all projects in the pack. This includes:
+                   <ul class="list-disc ml-6 mt-2 space-y-1">
+                     <li>Bug fixes and security patches</li>
+                     <li>New features and improvements</li>
+                     <li>Compatibility updates for new OS versions</li>
+                     <li>Access to newly added projects</li>
+                   </ul>
+                 </div>
+               </div>
+               <div class="faq-item bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md border border-slate-100">
+                 <button class="faq-question flex justify-between items-center w-full text-left">
+                   <span class="font-semibold text-neutral-darkest"><i class="fas fa-certificate text-secondary mr-2"></i>What's included in the license?</span>
+                   <svg class="w-6 h-6 transform transition-transform duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                 </button>
+                 <div class="faq-answer mt-4 text-neutral-DEFAULT hidden">
+                   Our license is developer-friendly and includes:
+                   <ul class="list-disc ml-6 mt-2 space-y-1">
+                     <li>Permission to use in unlimited personal projects</li>
+                     <li>Permission to use in client projects</li>
+                     <li>Right to modify and customize code</li>
+                     <li>Right to redistribute as part of your application</li>
+                     <li>Lifetime access to all projects</li>
+                   </ul>
+                 </div>
+               </div>
+               <div class="faq-item bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md border border-slate-100">
+                 <button class="faq-question flex justify-between items-center w-full text-left">
+                   <span class="font-semibold text-neutral-darkest"><i class="fas fa-headset text-indigo-600 mr-2"></i>What kind of support do you provide?</span>
+                   <svg class="w-6 h-6 transform transition-transform duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                 </button>
+                 <div class="faq-answer mt-4 text-neutral-DEFAULT hidden">
+                   We offer comprehensive support including:
+                   <ul class="list-disc ml-6 mt-2 space-y-1">
+                     <li>24/7 email support</li>
+                     <li>Installation assistance</li>
+                     <li>Bug fixing support</li>
+                     <li>Code customization guidance</li>
+                     <li>Access to private support forum</li>
+                   </ul>
+                 </div>
+               </div>
+               <div class="faq-item bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md border border-slate-100">
+                 <button class="faq-question flex justify-between items-center w-full text-left">
+                   <span class="font-semibold text-neutral-darkest"><i class="fas fa-paint-brush text-pink-600 mr-2"></i>Can I customize these apps for my needs?</span>
+                   <svg class="w-6 h-6 transform transition-transform duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                 </button>
+                 <div class="faq-answer mt-4 text-neutral-DEFAULT hidden">
+                   Absolutely! All projects are fully customizable:
+                   <ul class="list-disc ml-6 mt-2 space-y-1">
+                     <li>Modify UI/UX design elements</li>
+                     <li>Add or remove features</li>
+                     <li>Integrate with other services</li>
+                     <li>Change branding and colors</li>
+                     <li>Customize business logic</li>
+                   </ul>
+                 </div>
+               </div>
+               <div class="faq-item bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md border border-slate-100">
+                 <button class="faq-question flex justify-between items-center w-full text-left">
+                   <span class="font-semibold text-neutral-darkest"><i class="fas fa-laptop-code text-orange-600 mr-2"></i>What are the technical requirements?</span>
+                   <svg class="w-6 h-6 transform transition-transform duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                 </button>
+                 <div class="faq-answer mt-4 text-neutral-DEFAULT hidden">
+                   Requirements vary by project type:
+                   <ul class="list-disc ml-6 mt-2 space-y-1">
+                     <li>Android: Android Studio & JDK</li>
+                     <li>iOS: Xcode & macOS</li>
+                     <li>Web: Any modern code editor</li>
+                     <li>Basic programming knowledge</li>
+                     <li>Development machine with 8GB+ RAM</li>
+                   </ul>
+                 </div>
+               </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 animate-float">
+          <div class="bg-gradient-to-r from-primary to-primary-dark rounded-xl p-4 sm:p-8 text-white text-center custom-shadow">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Get Instant Access to 150+ Projects</h2>
+            <p class="mb-4 sm:mb-6 text-base sm:text-lg px-2 sm:px-0 text-primary-lighter/90">
+              Start your app business today with our Ultimate 150+ App Pack! One-time payment, lifetime access.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+              <div class="flex flex-col items-center sm:items-start">
+                <div class="text-3xl font-bold text-red-400 mb-2">90% OFF</div>
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-lg text-gray-300 line-through">₹4000</span>
+                  <span class="text-2xl font-bold text-white">₹399</span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div id="countdown-bottom" class="text-lg font-semibold text-primary-lighter">
+                <i class="fas fa-clock mr-2"></i>
+                <span>Offer ends in: <span id="timer-bottom">Loading...</span></span>
+              </div>
+            </div>
+            <button onclick="window.location.href='https://rzp.io/rzp/SA3qJReh'" class="primary-btn bg-white text-primary hover:bg-slate-100 shine-button w-full sm:w-auto">
+              Buy Now & Start Your App Empire Today!
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <footer class="bg-neutral-darkest text-white py-8 mt-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold mb-4">Framelink<span class="text-primary">.</span></h3>
+          <p class="text-neutral-light text-sm">Your one-stop solution for Web, Android, and iOS applications.</p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <ul class="space-y-2 text-neutral-light">
+            <li class="flex items-center gap-2"><i class="fas fa-envelope text-primary"></i> k41316069@gmail.com</li>
+
+          </ul>
+                
+              </div>
+            </div>
+            <div class="border-t border-neutral-DEFAULT/20 mt-8 pt-8 text-center text-neutral-light">
+              <ul class="space-y-2 mb-4">
+                <li><a href="https://k41316069.systeme.io/ef1975e7" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                <li><a href="https://k41316069.systeme.io/15628b0d" class="hover:text-primary transition-colors">Terms & Conditions</a></li>
+                <li><a href="https://k41316069.systeme.io/b9793332" class="hover:text-primary transition-colors">Refund Policy</a></li>
+                <li><a href="https://k41316069.systeme.io/548c00db" class="hover:text-primary transition-colors">Disclaimer</a></li>
+              </ul>
+              <p class="text-sm">&copy; 2025 Framelink. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+        </div>
+           
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/favorites.js"></script>
+    <script>
+      // Countdown Timer
+      function startTimer() {
+        // Timer functionality with 8-hour reset
+        function updateTimers() {
+          const now = new Date().getTime();
+          const lastReset = localStorage.getItem('lastResetTime') || now;
+          const eightHours = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
+          const twoHours = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
+          const timePassed = now - parseInt(lastReset);
+          let timeLeft = eightHours - (timePassed % eightHours);
+          
+          // Reset to 8 hours when reaching 2 hours remaining
+          if (timeLeft <= twoHours) {
+            localStorage.setItem('lastResetTime', now.toString());
+            timeLeft = eightHours;
+          }
+          
+          const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+          
+          // Format time with leading zeros
+          const timeString = `${hours.toString().padStart(2, '0')}h ${minutes.toString().padStart(2, '0')}m ${seconds.toString().padStart(2, '0')}s`;
+          
+          // Update all timer elements
+          const timerElements = document.querySelectorAll('#timer, #timer-bottom');
+          timerElements.forEach(element => {
+            if (element) element.textContent = timeString;
+          });
+        }
+
+        // Initial timer setup
+        if (!localStorage.getItem('timerLastReset')) {
+          localStorage.setItem('timerLastReset', new Date().getTime().toString());
+        }
+
+        // Update timer every second
+        updateTimer();
+        setInterval(updateTimer, 1000);
+      }
+
+      // Start timer when page loads
+      document.addEventListener('DOMContentLoaded', startTimer);
+
+      // FAQ Accordion Script
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.faq-question').forEach(question => {
+          question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector('svg');
+            const faqItem = question.closest('.faq-item');
+
+            // Close others
+            document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+              if (otherAnswer !== answer && !otherAnswer.classList.contains('hidden')) {
+                otherAnswer.classList.add('hidden');
+                const otherItem = otherAnswer.closest('.faq-item');
+                otherItem.querySelector('svg').classList.remove('rotate-180');
+                otherItem.style.backgroundColor = ''; // Reset background
+              }
+            });
+
+            // Toggle current
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+            faqItem.style.backgroundColor = answer.classList.contains('hidden') ? '' : '#F0FDFA'; // Updated highlight color (teal-50)
+
+            // Scroll into view
+            if (!answer.classList.contains('hidden')) {
+              const rect = faqItem.getBoundingClientRect();
+              if (rect.bottom > window.innerHeight || rect.top < 0) {
+                faqItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }
+          });
+
+          // Hover effect remains same
+          const faqItem = question.closest('.faq-item');
+          faqItem.addEventListener('mouseenter', () => {
+            if (faqItem.querySelector('.faq-answer').classList.contains('hidden')) {
+              faqItem.style.backgroundColor = '#f8fafc'; // slate-50
+            }
+          });
+          faqItem.addEventListener('mouseleave', () => {
+            if (faqItem.querySelector('.faq-answer').classList.contains('hidden')) {
+              faqItem.style.backgroundColor = '';
+            }
+          });
+        });
+
+        // Hover animations for other items (remain same)
+        document.querySelectorAll('.grid > div:not(.faq-item):not(.who-should-buy-card)').forEach(item => {
+          item.addEventListener('mouseenter', () => {
+            item.style.transform = 'translateY(-3px)'; // Slightly reduced lift
+            item.style.transition = 'all 0.2s ease-out';
+          });
+          item.addEventListener('mouseleave', () => {
+            item.style.transform = 'translateY(0)';
+          });
+        });
+      });
+    </script>
+    <script src="/scripts/notifications.js"></script>
+  </body>
+</html>
